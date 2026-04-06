@@ -9,63 +9,18 @@
 <body>
 
 <header>
-<h1>🍕 Mario Pizzeria Napoletană</h1>
-<p>Pantelimon, București – Str. Sf. Gheorghe 61</p>
-<p>📞 0728710294</p>
+  <h1>Mario Pizzeria Napoletană</h1>
+  <p>Pantelimon, Str. Sf. Gheorghe 61 | 0728710294</p>
+  <button onclick="sendWhatsApp()">Comandă pe WhatsApp</button>
 </header>
 
-<section>
-<h2>🍕 Pizza</h2>
+<div id="menu"></div>
 
-<div class="item"><h3>Margherita – 35 RON</h3><p>Aluat pizza, Sos de roșii San Marzano, Fior di Latte, Pecorino Romano, Busuioc, Ulei de măsline</p><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20o%20Margherita%20-%2035%20RON" target="_blank">📲 Comandă</a></div>
-<div class="item"><h3>Cotto e Funghi – 42 RON</h3><p>Aluat pizza, Prosciutto Cotto, Ciuperci, Sos de roșii San Marzano, Fior di Latte, Pecorino Romano, Ulei de măsline</p><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20un%20Cotto%20e%20Funghi%20-%2042%20RON" target="_blank">📲 Comandă</a></div>
-<div class="item"><h3>Diavola – 40 RON</h3><p>Aluat pizza, Sos de roșii San Marzano, Fior di Latte, Pecorino Romano, Spianata Picante, Ulei de măsline</p><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20o%20Diavola%20-%2040%20RON" target="_blank">📲 Comandă</a></div>
-<div class="item"><h3>Salami Dolce – 40 RON</h3><p>Aluat pizza, Fior di Latte, Pecorino Romano, Spianata Dolce, Ulei de măsline</p><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20un%20Salami%20Dolce%20-%2040%20RON" target="_blank">📲 Comandă</a></div>
-<div class="item"><h3>Quattro Formaggi – 44 RON</h3><p>Aluat pizza, Fior di Latte, Pecorino Romano, Gorgonzola Dolce, Taleggio</p><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20un%20Quattro%20Formaggi%20-%2044%20RON" target="_blank">📲 Comandă</a></div>
-<div class="item"><h3>Quattro Stagioni – 45 RON</h3><p>Aluat pizza, Ciuperci, Sos de roșii San Marzano, Fior di Latte, Prosciutto Cotto, Măsline Kalamata, Anghinare, Spianata Picante</p><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20un%20Quattro%20Stagioni%20-%2045%20RON" target="_blank">📲 Comandă</a></div>
-<div class="item"><h3>Carnivora – 48 RON</h3><p>Aluat pizza, Sos de roșii San Marzano, Pancetta Arrotolata, Prosciutto Cotto, Spianata Dolce, Fior di Latte, Pecorino Romano</p><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20un%20Carnivora%20-%2048%20RON" target="_blank">📲 Comandă</a></div>
-<div class="item"><h3>Mario – 42 RON</h3><p>Aluat pizza, Fistic, Sos de roșii San Marzano, Stracciatella, Fior di Latte, Pecorino Romano</p><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20un%20Mario%20-%2042%20RON" target="_blank">📲 Comandă</a></div>
-<div class="item"><h3>Pancetta – 42 RON</h3><p>Aluat pizza, Ardei copt, Sos de roșii San Marzano, Pancetta Arrotolata, Stracciatella, Fior di Latte, Pecorino Romano</p><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20un%20Pancetta%20-%2042%20RON" target="_blank">📲 Comandă</a></div>
-<div class="item"><h3>Tono e Cipola – 42 RON</h3><p>Aluat pizza, Ton conservă, Sos de roșii San Marzano, Ceapă, Fior di Latte, Pecorino Romano</p><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20un%20Tono%20e%20Cipola%20-%2042%20RON" target="_blank">📲 Comandă</a></div>
-<div class="item"><h3>Crudo e Rucola – 45 RON</h3><p>Aluat pizza, Sos de roșii San Marzano, Rucola, Stracciatella, Roșii cherry, Prosciutto Crudo, Fior di Latte, Pecorino Romano</p><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20un%20Crudo%20e%20Rucola%20-%2045%20RON" target="_blank">📲 Comandă</a></div>
-<div class="item"><h3>Porchetta – 45 RON</h3><p>Aluat pizza, Roșii cherry, Ceapă crispy, Porchetta artizanală, Stracciatella, Fior di Latte, Pecorino Romano</p><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20un%20Porchetta%20-%2045%20RON" target="_blank">📲 Comandă</a></div>
-<div class="item"><h3>Bufala – 38 RON</h3><p>Aluat pizza, Sos de roșii San Marzano, Bufallo, Pecorino Romano, Busuioc, Ulei de măsline</p><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20un%20Bufala%20-%2038%20RON" target="_blank">📲 Comandă</a></div>
-<div class="item"><h3>Vegetariana – 37 RON</h3><p>Aluat pizza, Sos de roșii San Marzano, Rucola, Măsline Kalamata, Ardei copt, Mix de funghi, Fior di Latte</p><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20un%20Vegetariana%20-%2037%20RON" target="_blank">📲 Comandă</a></div>
+<div class="cart">
+<h2>Coș</h2>
+<div id="cart"></div>
+</div>
 
-<section>
-<h2>🍔 Burgeri</h2>
-<div class="item"><h3>Smash Burger – 35 RON</h3><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20un%20Smash%20Burger%20-%2035%20RON" target="_blank">📲 Comandă</a></div>
-<div class="item"><h3>Smash Double Burger – 45 RON</h3><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20un%20Smash%20Double%20Burger%20-%2045%20RON" target="_blank">📲 Comandă</a></div>
-<div class="item"><h3>Chicken Burger – 35 RON</h3><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20un%20Chicken%20Burger%20-%2035%20RON" target="_blank">📲 Comandă</a></div>
-
-<h3>🍟 Combo</h3>
-<div class="item"><h3>Combo Smash – 53 RON</h3><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20un%20Combo%20Smash%20-%2053%20RON" target="_blank">📲 Comandă</a></div>
-<div class="item"><h3>Combo Smash Double – 63 RON</h3><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20un%20Combo%20Smash%20Double%20-%2063%20RON" target="_blank">📲 Comandă</a></div>
-<div class="item"><h3>Combo Chicken – 53 RON</h3><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20un%20Combo%20Chicken%20-%2053%20RON" target="_blank">📲 Comandă</a></div>
-
-<section>
-<h2>🥪 Panini</h2>
-<div class="item"><h3>Panini Spianata Picante – 15 RON</h3><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20un%20Panini%20Spianata%20Picante%20-%2015%20RON" target="_blank">📲 Comandă</a></div>
-<div class="item"><h3>Panini Spianata Dolce – 15 RON</h3><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20un%20Panini%20Spianata%20Dolce%20-%2015%20RON" target="_blank">📲 Comandă</a></div>
-<div class="item"><h3>Panini Prosciutto Cotto – 15 RON</h3><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20un%20Panini%20Prosciutto%20Cotto%20-%2015%20RON" target="_blank">📲 Comandă</a></div>
-<div class="item"><h3>Panini Mortadella – 16 RON</h3><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20un%20Panini%20Mortadella%20-%2016%20RON" target="_blank">📲 Comandă</a></div>
-<div class="item"><h3>Panini Prosciutto Crudo – 15 RON</h3><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20un%20Panini%20Prosciutto%20Crudo%20-%2015%20RON" target="_blank">📲 Comandă</a></div>
-
-<section>
-<h2>🍟 Fries & Extras</h2>
-<div class="item"><h3>Fries – 10 RON</h3><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20Fries%20-%2010%20RON" target="_blank">📲 Comandă</a></div>
-<div class="item"><h3>Cheesy Fries – 15 RON</h3><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20Cheesy%20Fries%20-%2015%20RON" target="_blank">📲 Comandă</a></div>
-
-<section>
-<h2>🍰 Desert</h2>
-<div class="item"><h3>Clătite Dulceață – 20 RON</h3><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20Clătite%20Dulceață%20-%2020%20RON" target="_blank">📲 Comandă</a></div>
-<div class="item"><h3>Clătite Nutella – 23 RON</h3><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20Clătite%20Nutella%20-%2023%20RON" target="_blank">📲 Comandă</a></div>
-<div class="item"><h3>Clătite Nutella Fructe – 35 RON</h3><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20Clătite%20Nutella%20Fructe%20-%2035%20RON" target="_blank">📲 Comandă</a></div>
-<div class="item"><h3>Pizza Nutella – 32 RON</h3><a class="order-btn" href="https://wa.me/40728710294?text=Vreau%20Pizza%20Nutella%20-%2032%20RON" target="_blank">📲 Comandă</a></div>
-
-<footer>
-<p>© Mario Pizzeria Napoletană</p>
-</footer>
-
+<script src="script.js"></script>
 </body>
 </html>
